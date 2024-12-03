@@ -1,0 +1,100 @@
+/* Full-Page Background Image */
+body {
+    background: url('background.jpg') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* General font */
+    color: white; /* Ensure text is visible on background */
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Header (Navbar) */
+  .header {
+    /* Transparent overlay for better contrast */
+    padding: 1rem 0;
+    position: fixed; /* Stick to top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cakes Section */
+  .cakes-section {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .cakes-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .cake-card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    color: black; /* Ensure text is readable */
+  }
+  
+  .cake-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6); /* Match navbar style */
+    color: white;
+  }
+  
